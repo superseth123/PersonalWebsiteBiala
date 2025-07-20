@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Fun Fact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fef3c7;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+
+    .popup-box {
+      background: #fff;
+      border: 2px solid #333;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      display: inline-block;
+      animation: slideFromRight 1s ease-out;
+    }
+
+    @keyframes slideFromRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      color: #e67e22;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-box">
+    <h2>Did You Know?</h2>
+    <p>HTML was first released in 1991 and only had 18 tags!</p>
+    <a href="index.html" class="back-home">← Back to Home</a>
+  </div>
+</body>
+</html>
